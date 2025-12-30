@@ -4,78 +4,37 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Le Choix Pratique – Ustensiles de cuisine utiles et pratiques</title>
-  <meta name="description" content="Sélection d’ustensiles de cuisine utiles, pratiques et efficaces pour gagner du temps au quotidien." />
+  <title>Ustensiles de cuisine pratiques | Le Choix Pratique</title>
+  <meta name="description" content="Découvrez une sélection d’ustensiles de cuisine pratiques et efficaces pour gagner du temps au quotidien. Liens Amazon fiables.">
 
   <style>
-    body {
-      margin:0;
-      font-family: Arial, Helvetica, sans-serif;
-      background:#f9f9f9;
-      color:#333;
-      line-height:1.6;
-    }
+    body{margin:0;font-family:Arial,Helvetica,sans-serif;background:#f9f9f9;color:#333;line-height:1.6}
+    nav{background:#020617;padding:15px;text-align:center}
+    nav a{color:#fff;margin:0 15px;text-decoration:none;font-weight:bold}
+    nav a.active{text-decoration:underline;opacity:.85}
+    nav a:hover{opacity:.8}
 
-    nav {
-      background:#020617;
-      padding:15px;
-      text-align:center;
-    }
+    header{background:linear-gradient(135deg,#020617,#1e293b);color:#fff;padding:80px 20px;text-align:center}
+    .container{max-width:1100px;margin:auto}
+    section{padding:60px 20px}
 
-    nav a {
-      color:#fff;
-      margin:0 15px;
-      text-decoration:none;
-      font-weight:bold;
-    }
+    .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:25px}
 
-    nav a.active {
-      text-decoration: underline;
-      opacity: 0.85;
-    }
-
-    header {
-      background: linear-gradient(135deg,#020617,#1e293b);
-      color:#fff;
-      padding:80px 20px;
-      text-align:center;
-    }
-
-    .container {
-      max-width:1100px;
-      margin:auto;
-    }
-
-    section {
-      padding:60px 20px;
-    }
-
-    .cards {
-      display:grid;
-      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-      gap:25px;
-    }
-
-    .card {
+    .card{
       background:#fff;
       padding:20px;
       border-radius:14px;
-      box-shadow:0 10px 25px rgba(0,0,0,0.08);
-      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      box-shadow:0 10px 25px rgba(0,0,0,.08);
+      transition:transform .2s ease,box-shadow .2s ease
+    }
+    .card:hover{
+      transform:translateY(-5px);
+      box-shadow:0 15px 35px rgba(0,0,0,.12)
     }
 
-    .card:hover {
-      transform: translateY(-5px);
-      box-shadow:0 15px 35px rgba(0,0,0,0.12);
-    }
+    .card img{width:100%;border-radius:10px;margin-bottom:12px}
 
-    .card img {
-      width:100%;
-      border-radius:10px;
-      margin-bottom:12px;
-    }
-
-    .btn {
+    .btn{
       display:inline-block;
       margin-top:15px;
       padding:12px 22px;
@@ -84,55 +43,31 @@
       text-decoration:none;
       border-radius:999px;
       font-weight:bold;
-      font-size:0.95rem;
+      font-size:.95rem
     }
+    .btn:hover{opacity:.9}
 
-    footer {
+    footer{
       background:#0f172a;
       color:#cbd5e1;
       text-align:center;
-      padding:20px;
-      font-size:0.9rem;
+      padding:25px;
+      font-size:.9rem
     }
-@media (max-width: 768px) {
-  h2 {
-    font-size:1.4rem;
-  }
 
-  .btn {
-    width:100%;
-    text-align:center;
-  }
-}
-
-/* Effets hover */
-nav a:hover {
-  opacity: 0.8;
-}
-
-.cat-card {
-  transition: transform 0.3s ease;
-}
-
-.cat-card:hover {
-  transform: translateY(-4px);
-}
-
-.btn:hover {
-  opacity: 0.9;
-}
-
-}
-
+    @media (max-width:768px){
+      h2{font-size:1.4rem}
+      .btn{width:100%;text-align:center}
+    }
   </style>
 </head>
 
 <body>
 
 <nav>
-  <a href="index.html" class="active">Accueil</a>
+  <a href="index.html">Accueil</a>
   <a href="meilleures-ventes.html">Meilleures ventes</a>
-  <a href="cuisine.html">Cuisine</a>
+  <a href="cuisine.html" class="active">Cuisine</a>
   <a href="maison.html">Maison</a>
   <a href="vetements.html">Vêtements</a>
   <a href="beaute.html">Beauté</a>
@@ -140,7 +75,7 @@ nav a:hover {
 </nav>
 
 <header>
-  <h1>Ustensiles de cuisine pratiques – Le Choix Pratique</h1>
+  <h1>Ustensiles de cuisine pratiques et efficaces</h1>
   <p>Des outils simples pour cuisiner plus vite et plus facilement chaque jour.</p>
 </header>
 
@@ -162,43 +97,53 @@ nav a:hover {
     <div class="cards">
 
       <div class="card">
-        <img src="images/hachoir-legumes.jpg" alt="Hachoir à légumes manuel">
+        <img src="images/hachoir-legumes.jpg" alt="Hachoir à légumes manuel" loading="lazy">
         <h3>Hachoir à légumes manuel – coupe rapide sans électricité</h3>
         <p>Coupez oignons, légumes et herbes en quelques secondes, sans effort.</p>
-        <p><strong>Pourquoi choisir ce produit ?</strong> Gain de temps immédiat sans branchement.</p>
-        <a class="btn" href="https://amzn.to/3YfB5Mt" target="_blank" rel="nofollow sponsored">Voir le prix sur Amazon</a>
+        <p><strong>Pourquoi choisir ce produit ?</strong> Gain de temps immédiat, sans branchement.</p>
+        <a class="btn" href="https://amzn.to/3YfB5Mt" target="_blank" rel="nofollow sponsored noopener">
+          Voir le prix sur Amazon
+        </a>
       </div>
 
       <div class="card">
-        <img src="images/mandoline-cuisine.jpg" alt="Mandoline de cuisine réglable">
-        <h3>Mandoline réglable – tranches parfaites en quelques secondes</h3>
-        <p>Réalisez des tranches régulières rapidement pour tous vos plats.</p>
-        <p><strong>Pourquoi choisir ce produit ?</strong> Résultat professionnel à la maison.</p>
-        <a class="btn" href="https://amzn.to/4s8y9Po" target="_blank" rel="nofollow sponsored">Voir le prix sur Amazon</a>
+        <img src="images/mandoline-cuisine.jpg" alt="Mandoline de cuisine réglable" loading="lazy">
+        <h3>Mandoline réglable – tranches régulières en quelques secondes</h3>
+        <p>Réalisez des découpes nettes et rapides pour tous vos plats.</p>
+        <p><strong>Pourquoi choisir ce produit ?</strong> Résultat précis, digne d’un chef.</p>
+        <a class="btn" href="https://amzn.to/4s8y9Po" target="_blank" rel="nofollow sponsored noopener">
+          Voir le prix sur Amazon
+        </a>
       </div>
 
       <div class="card">
-        <img src="images/rape-multifonction.jpg" alt="Râpe multifonction cuisine">
+        <img src="images/rape-multifonction.jpg" alt="Râpe multifonction cuisine" loading="lazy">
         <h3>Râpe multifonction – un seul outil pour tout râper</h3>
-        <p>Fromage, légumes, fruits : un seul ustensile pour tout.</p>
-        <p><strong>Pourquoi choisir ce produit ?</strong> Gain de place et simplicité maximale.</p>
-        <a class="btn" href="https://amzn.to/49rXht7" target="_blank" rel="nofollow sponsored">Voir le prix sur Amazon</a>
+        <p>Fromage, légumes, fruits : un ustensile polyvalent et compact.</p>
+        <p><strong>Pourquoi choisir ce produit ?</strong> Gain de place et simplicité.</p>
+        <a class="btn" href="https://amzn.to/49rXht7" target="_blank" rel="nofollow sponsored noopener">
+          Voir le prix sur Amazon
+        </a>
       </div>
 
       <div class="card">
-        <img src="images/coupe-frites.jpg" alt="Coupe-frites manuel">
+        <img src="images/coupe-frites.jpg" alt="Coupe-frites manuel" loading="lazy">
         <h3>Coupe-frites manuel – frites maison rapides et régulières</h3>
         <p>Préparez facilement des frites maison parfaitement découpées.</p>
-        <p><strong>Pourquoi choisir ce produit ?</strong> Frites régulières sans prise de tête.</p>
-        <a class="btn" href="https://amzn.to/49dxqE6" target="_blank" rel="nofollow sponsored">Voir le prix sur Amazon</a>
+        <p><strong>Pourquoi choisir ce produit ?</strong> Résultat homogène sans effort.</p>
+        <a class="btn" href="https://amzn.to/49dxqE6" target="_blank" rel="nofollow sponsored noopener">
+          Voir le prix sur Amazon
+        </a>
       </div>
 
       <div class="card">
-        <img src="images/essoreuse-salade.jpg" alt="Essoreuse à salade compacte">
+        <img src="images/essoreuse-salade.jpg" alt="Essoreuse à salade compacte" loading="lazy">
         <h3>Essoreuse à salade compacte – légumes secs en moins d’une minute</h3>
         <p>Lavez et séchez vos légumes rapidement avant de servir.</p>
-        <p><strong>Pourquoi choisir ce produit ?</strong> Salade prête immédiatement.</p>
-        <a class="btn" href="https://amzn.to/49bn1bU" target="_blank" rel="nofollow sponsored">Voir le prix sur Amazon</a>
+        <p><strong>Pourquoi choisir ce produit ?</strong> Salades prêtes immédiatement.</p>
+        <a class="btn" href="https://amzn.to/49bn1bU" target="_blank" rel="nofollow sponsored noopener">
+          Voir le prix sur Amazon
+        </a>
       </div>
 
     </div>
@@ -206,12 +151,10 @@ nav a:hover {
 </section>
 
 <footer>
-  © 2025 – En tant que Partenaire Amazon, je réalise un bénéfice sur les achats éligibles.
-<br><a href="a-propos.html" style="color:#cbd5e1;">À propos</a>
+  © 2025 – Le Choix Pratique<br><br>
+  <em>En tant que Partenaire Amazon, ce site réalise un bénéfice sur les achats éligibles.</em><br><br>
+  <a href="a-propos.html" style="color:#cbd5e1;text-decoration:underline;">À propos</a>
 </footer>
 
 </body>
 </html>
-
-
-
