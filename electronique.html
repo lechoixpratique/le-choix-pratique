@@ -4,40 +4,79 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Le Choix Pratique – Électronique utile</title>
-  <meta name="description" content="Sélection de produits électroniques utiles et pratiques pour le quotidien.">
+  <title>Électronique utile et pratique | Le Choix Pratique</title>
+  <meta name="description" content="Sélection de produits électroniques utiles et pratiques pour la maison et le bureau. Accessoires fiables avec liens Amazon.">
 
   <style>
     body{margin:0;font-family:Arial,Helvetica,sans-serif;background:#f9f9f9;color:#333;line-height:1.6}
     nav{background:#020617;padding:15px;text-align:center}
     nav a{color:#fff;margin:0 15px;text-decoration:none;font-weight:bold}
     nav a.active{text-decoration:underline;opacity:.85}
+    nav a:hover{opacity:.8}
+
     header{background:linear-gradient(135deg,#020617,#1e293b);color:#fff;padding:80px 20px;text-align:center}
     .container{max-width:1100px;margin:auto}
     section{padding:60px 20px}
+
     .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:25px}
-    .card{background:#fff;padding:20px;border-radius:14px;box-shadow:0 10px 25px rgba(0,0,0,.08)}
+
+    .card{
+      background:#fff;
+      padding:20px;
+      border-radius:14px;
+      box-shadow:0 10px 25px rgba(0,0,0,.08);
+      transition:transform .2s ease,box-shadow .2s ease
+    }
+    .card:hover{
+      transform:translateY(-5px);
+      box-shadow:0 15px 35px rgba(0,0,0,.12)
+    }
+
     .card img{width:100%;border-radius:10px;margin-bottom:12px}
-    .btn{display:inline-block;margin-top:15px;padding:12px 22px;background:linear-gradient(135deg,#2563eb,#1e40af);color:#fff;text-decoration:none;border-radius:999px;font-weight:bold}
-    footer{background:#0f172a;color:#cbd5e1;text-align:center;padding:20px;font-size:.9rem}
+
+    .btn{
+      display:inline-block;
+      margin-top:15px;
+      padding:12px 22px;
+      background:linear-gradient(135deg,#2563eb,#1e40af);
+      color:#fff;
+      text-decoration:none;
+      border-radius:999px;
+      font-weight:bold;
+      font-size:.95rem
+    }
+    .btn:hover{opacity:.9}
+
+    footer{
+      background:#0f172a;
+      color:#cbd5e1;
+      text-align:center;
+      padding:25px;
+      font-size:.9rem
+    }
+
+    @media (max-width:768px){
+      h2{font-size:1.4rem}
+      .btn{width:100%;text-align:center}
+    }
   </style>
 </head>
 
 <body>
 
 <nav>
-  <a href="index.html" class="active">Accueil</a>
+  <a href="index.html">Accueil</a>
   <a href="meilleures-ventes.html">Meilleures ventes</a>
   <a href="cuisine.html">Cuisine</a>
   <a href="maison.html">Maison</a>
   <a href="vetements.html">Vêtements</a>
   <a href="beaute.html">Beauté</a>
-  <a href="electronique.html">Électronique</a>
+  <a href="electronique.html" class="active">Électronique</a>
 </nav>
 
 <header>
-  <h1>Électronique utile</h1>
-  <p>Des accessoires simples et efficaces pour la maison et le bureau.</p>
+  <h1>Produits électroniques utiles et pratiques</h1>
+  <p>Des accessoires simples et efficaces pour la maison, le bureau et le quotidien.</p>
 </header>
 
 <section>
@@ -46,28 +85,37 @@
 
     <div class="cards">
 
+      <!-- PRODUIT 1 -->
       <div class="card">
-        <img src="images/prise-multiprise-usb.jpg" alt="Multiprise avec ports USB">
-        <h3>Multiprise avec ports USB</h3>
-        <p>Permet de brancher et charger plusieurs appareils.</p>
-        <p><strong>Pourquoi choisir ce produit ?</strong> Gain de place.</p>
-        <a class="btn" href="https://amzn.to/3YhYFs1" target="_blank" rel="nofollow sponsored">Voir le prix sur Amazon</a>
+        <img src="images/prise-multiprise-usb.jpg" alt="Multiprise avec ports USB" loading="lazy">
+        <h3>Multiprise avec ports USB – tout brancher au même endroit</h3>
+        <p>Permet de brancher et de charger plusieurs appareils simultanément.</p>
+        <p><strong>Pourquoi choisir ce produit ?</strong> Gain de place et organisation optimale.</p>
+        <a class="btn" href="https://amzn.to/3YhYFs1" target="_blank" rel="nofollow sponsored noopener">
+          Voir le prix sur Amazon
+        </a>
       </div>
 
+      <!-- PRODUIT 2 -->
       <div class="card">
-        <img src="images/support-telephone.jpg" alt="Support téléphone réglable">
-        <h3>Support téléphone réglable</h3>
-        <p>Idéal pour appels vidéo, bureau ou cuisine.</p>
-        <p><strong>Pourquoi choisir ce produit ?</strong> Mains libres.</p>
-        <a class="btn" href="https://amzn.to/4jhKGvL" target="_blank" rel="nofollow sponsored">Voir le prix sur Amazon</a>
+        <img src="images/support-telephone.jpg" alt="Support téléphone réglable" loading="lazy">
+        <h3>Support téléphone réglable – mains libres au quotidien</h3>
+        <p>Idéal pour appels vidéo, bureau, cuisine ou visionnage de contenu.</p>
+        <p><strong>Pourquoi choisir ce produit ?</strong> Confort d’utilisation et meilleure posture.</p>
+        <a class="btn" href="https://amzn.to/4jhKGvL" target="_blank" rel="nofollow sponsored noopener">
+          Voir le prix sur Amazon
+        </a>
       </div>
 
+      <!-- PRODUIT 3 -->
       <div class="card">
-        <img src="images/ecouteurs-bluetooth.jpg" alt="Écouteurs Bluetooth">
-        <h3>Écouteurs Bluetooth</h3>
-        <p>Liberté sans fil pour le quotidien.</p>
-        <p><strong>Pourquoi choisir ce produit ?</strong> Polyvalent.</p>
-        <a class="btn" href="https://amzn.to/3YOU9kS" target="_blank" rel="nofollow sponsored">Voir le prix sur Amazon</a>
+        <img src="images/ecouteurs-bluetooth.jpg" alt="Écouteurs Bluetooth sans fil" loading="lazy">
+        <h3>Écouteurs Bluetooth – liberté sans fil au quotidien</h3>
+        <p>Profitez de votre musique, appels et contenus sans câble.</p>
+        <p><strong>Pourquoi choisir ce produit ?</strong> Polyvalent, pratique et facile à transporter.</p>
+        <a class="btn" href="https://amzn.to/3YOU9kS" target="_blank" rel="nofollow sponsored noopener">
+          Voir le prix sur Amazon
+        </a>
       </div>
 
     </div>
@@ -75,13 +123,10 @@
 </section>
 
 <footer>
-  © 2025 – Le Choix Pratique<br>
-  En tant que Partenaire Amazon, je réalise un bénéfice sur les achats éligibles.<br>
-  <a href="a-propos.html" style="color:#cbd5e1;">À propos</a>
+  © 2025 – Le Choix Pratique<br><br>
+  <em>En tant que Partenaire Amazon, ce site réalise un bénéfice sur les achats éligibles.</em><br><br>
+  <a href="a-propos.html" style="color:#cbd5e1;text-decoration:underline;">À propos</a>
 </footer>
 
 </body>
 </html>
-
-
-
