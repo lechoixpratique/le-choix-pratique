@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Le Choix Pratique – Meilleures ventes utiles du moment</title>
+  <meta name="description" content="Découvrez les meilleures ventes sélectionnées par Le Choix Pratique : produits utiles, pratiques et populaires pour le quotidien." />
+
+  <style>
+    body {
+      margin:0;
+      font-family: Arial, Helvetica, sans-serif;
+      background:#f9f9f9;
+      color:#333;
+      line-height:1.6;
+    }
+
+    nav {
+      background:#020617;
+      padding:15px;
+      text-align:center;
+    }
+
+    nav a {
+      color:#fff;
+      margin:0 15px;
+      text-decoration:none;
+      font-weight:bold;
+    }
+
+    nav a.active {
+      text-decoration: underline;
+      opacity:0.85;
+    }
+
+    header {
+      background: linear-gradient(135deg,#020617,#1e293b);
+      color:#fff;
+      padding:90px 20px;
+      text-align:center;
+    }
+
+    .container {
+      max-width:1100px;
+      margin:auto;
+    }
+
+    section {
+      padding:60px 20px;
+    }
+
+    .cards {
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+      gap:30px;
+    }
+
+    .card {
+      background:#fff;
+      padding:22px;
+      border-radius:16px;
+      box-shadow:0 10px 25px rgba(0,0,0,0.08);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+      box-shadow:0 18px 40px rgba(0,0,0,0.12);
+    }
+
+    .card img {
+      width:100%;
+      border-radius:10px;
+      margin-bottom:12px;
+    }
+
+    .badge {
+      display:inline-block;
+      background:#16a34a;
+      color:#fff;
+      padding:5px 12px;
+      border-radius:999px;
+      font-size:0.75rem;
+      font-weight:bold;
+      margin-bottom:10px;
+    }
+
+    .btn {
+      display:inline-block;
+      margin-top:15px;
+      padding:12px 24px;
+      background:linear-gradient(135deg,#2563eb,#1e40af);
+      color:#fff;
+      text-decoration:none;
+      border-radius:999px;
+      font-weight:bold;
+      font-size:0.95rem;
+    }
+
+    footer {
+      background:#0f172a;
+      color:#cbd5e1;
+      text-align:center;
+      padding:25px;
+      font-size:0.9rem;
+    }
+
+@media (max-width: 768px) {
+  h2 {
+    font-size:1.4rem;
+  }
+
+  .btn {
+    width:100%;
+    text-align:center;
+  }
+}
+
+/* Effets hover */
+nav a:hover {
+  opacity: 0.8;
+}
+
+.cat-card {
+  transition: transform 0.3s ease;
+}
+
+.cat-card:hover {
+  transform: translateY(-4px);
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+    }
+  </style>
+</head>
+
+<body>
+
+<nav>
+  <a href="index.html" class="active">Accueil</a>
+  <a href="meilleures-ventes.html">Meilleures ventes</a>
+  <a href="cuisine.html">Cuisine</a>
+  <a href="maison.html">Maison</a>
+  <a href="vetements.html">Vêtements</a>
+  <a href="beaute.html">Beauté</a>
+  <a href="electronique.html">Électronique</a>
+</nav>
+
+<header>
+  <h1>Meilleures ventes du moment</h1>
+  <p>
+    Les produits les plus appréciés et les plus utiles,
+    sélectionnés pour leur efficacité et leur popularité.
+  </p>
+</header>
+
+<section>
+  <div class="container">
+    <h2>Produits les plus populaires</h2>
+
+    <div class="cards">
+
+      <!-- PRODUIT 1 -->
+      <div class="card">
+        <span class="badge">🔥 Bestseller</span>
+        <img src="hachoir-legumes.jpg" alt="Hachoir à légumes manuel">
+        <h3>Hachoir à légumes manuel – rapide et sans électricité</h3>
+        <p>Un indispensable en cuisine pour gagner du temps chaque jour.</p>
+        <a class="btn" href="https://amzn.to/3YfB5Mt" target="_blank" rel="nofollow sponsored">Voir sur Amazon</a>
+      </div>
+
+      <!-- PRODUIT 2 -->
+      <div class="card">
+        <span class="badge">⭐ Très populaire</span>
+        <img src="balai-spray.jpg" alt="Balai serpillière spray">
+        <h3>Balai serpillière spray – nettoyage express</h3>
+        <p>Idéal pour un nettoyage rapide et efficace sans seau.</p>
+        <a class="btn" href="https://amzn.to/4qlZBaA" target="_blank" rel="nofollow sponsored">Voir sur Amazon</a>
+      </div>
+
+      <!-- PRODUIT 3 -->
+      <div class="card">
+        <span class="badge">👍 Choix pratique</span>
+        <img src="support-telephone.jpg" alt="Support téléphone réglable">
+        <h3>Support téléphone réglable – bureau et maison</h3>
+        <p>Parfait pour les appels vidéo, recettes ou travail.</p>
+        <a class="btn" href="https://amzn.to/4jhKGvL" target="_blank" rel="nofollow sponsored">Voir sur Amazon</a>
+      </div>
+
+      <!-- PRODUIT 4 -->
+      <div class="card">
+        <span class="badge">💄 Tendance</span>
+        <img src="brosse-nettoyante-visage.jpg" alt="Brosse nettoyante visage">
+        <h3>Brosse nettoyante visage – soin quotidien</h3>
+        <p>Améliore le nettoyage et l’éclat de la peau.</p>
+        <a class="btn" href="https://amzn.to/EXEMPLE" target="_blank" rel="nofollow sponsored">Voir sur Amazon</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<footer>
+  © 2025 – Le Choix Pratique<br>
+  En tant que Partenaire Amazon, je réalise un bénéfice sur les achats éligibles.<br>
+  <a href="a-propos.html" style="color:#cbd5e1;">À propos</a>
+</footer>
+
+</body>
+</html>
