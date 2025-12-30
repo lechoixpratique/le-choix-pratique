@@ -1,4 +1,3 @@
-```html
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -6,7 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>À propos – Le Choix Pratique</title>
-  <meta name="description" content="Découvrez Le Choix Pratique : un site indépendant qui sélectionne des produits utiles, simples et efficaces pour améliorer le quotidien." />
+  <meta name="description" content="Découvrez Le Choix Pratique : un site indépendant qui sélectionne des produits utiles, simples et efficaces pour améliorer le quotidien.">
+  <meta name="robots" content="index, follow">
 
   <style>
     body {
@@ -33,6 +33,10 @@
     nav a.active {
       text-decoration: underline;
       opacity:0.85;
+    }
+
+    nav a:hover {
+      opacity:0.8;
     }
 
     header {
@@ -68,34 +72,13 @@
       font-size:0.9rem;
     }
 
-  @media (max-width: 768px) {
-  h2 {
-    font-size:1.4rem;
-  }
-
-  .btn {
-    width:100%;
-    text-align:center;
-  }
-}
-
-/* Effets hover */
-nav a:hover {
-  opacity: 0.8;
-}
-
-.cat-card {
-  transition: transform 0.3s ease;
-}
-
-.cat-card:hover {
-  transform: translateY(-4px);
-}
-
-.btn:hover {
-  opacity: 0.9;
-}
-
+    @media (max-width: 768px) {
+      h1 {
+        font-size:1.8rem;
+      }
+      h2 {
+        font-size:1.4rem;
+      }
     }
   </style>
 </head>
@@ -103,13 +86,14 @@ nav a:hover {
 <body>
 
 <nav>
-  <a href="index.html" class="active">Accueil</a>
+  <a href="index.html">Accueil</a>
   <a href="meilleures-ventes.html">Meilleures ventes</a>
   <a href="cuisine.html">Cuisine</a>
   <a href="maison.html">Maison</a>
   <a href="vetements.html">Vêtements</a>
   <a href="beaute.html">Beauté</a>
   <a href="electronique.html">Électronique</a>
+  <a href="a-propos.html" class="active">À propos</a>
 </nav>
 
 <header>
@@ -118,6 +102,7 @@ nav a:hover {
 </header>
 
 <section>
+
   <div class="highlight">
     <h2>Notre objectif</h2>
     <p>
@@ -150,23 +135,20 @@ nav a:hover {
     <h2>Transparence & affiliation Amazon</h2>
     <p>
       Le Choix Pratique participe au programme Partenaires Amazon.
-      Cela signifie que certains liens présents sur le site sont des liens affiliés.
+      Certains liens présents sur le site sont donc des liens affiliés.
     </p>
     <p>
       En tant que Partenaire Amazon, nous pouvons percevoir une commission
       sur les achats éligibles, sans aucun coût supplémentaire pour vous.
     </p>
     <p>
-      Cette affiliation nous permet de faire vivre le site
+      Cette affiliation permet de faire vivre le site
       tout en restant totalement indépendants dans nos sélections.
     </p>
   </div>
 
   <div class="highlight">
     <h2>Notre engagement</h2>
-    <p>
-      Nous nous engageons à :
-    </p>
     <ul>
       <li>✔ Proposer uniquement des produits utiles</li>
       <li>✔ Rester honnêtes et transparents</li>
@@ -174,6 +156,7 @@ nav a:hover {
       <li>✔ Simplifier vos choix d’achat</li>
     </ul>
   </div>
+
 </section>
 
 <footer>
@@ -183,4 +166,3 @@ nav a:hover {
 
 </body>
 </html>
-```
